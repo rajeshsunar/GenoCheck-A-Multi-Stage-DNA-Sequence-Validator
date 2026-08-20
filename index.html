@@ -316,7 +316,6 @@
   <header>
     <div class="eyebrow"><span class="dot"></span>TECH315 — MODELS OF COMPUTATION · GENOCHECK</div>
     <h1>Geno<span>Check</span></h1>
-    <div class="subtitle">Type a DNA sequence and watch it fall through three cascading machines — a DFA, a PDA, and a Turing machine — each one only as powerful as the check it has to make.</div>
   </header>
 
   <div class="input-card">
@@ -333,15 +332,15 @@
     <div class="ladder">
       <div class="step" data-k="1" id="step1">
         <div class="step-name">Regular</div>
-        <div class="step-sub">DFA · finite memory <br> M=(Q,Σ,δ,q0​,F) </div>
+        <div class="step-sub">DFA · finite memory </div>
       </div>
       <div class="step" data-k="2" id="step2">
         <div class="step-name">Context-Free</div>
-        <div class="step-sub">PDA · one stack <br> M=(Q,Σ,Γ,δ,q0​,Z0​,F)</div>
+        <div class="step-sub">PDA · one stack</div>
       </div>
       <div class="step" data-k="3" id="step3">
         <div class="step-name">Decidable</div>
-        <div class="step-sub">TM · unbounded tape <br> M=(Q,Σ,Γ,δ,q0​,B,F)</div>
+        <div class="step-sub">TM · unbounded tape</div>
       </div>
     </div>
     <div class="subset-note">Regular <b>⊂</b> Context-Free <b>⊂</b> Decidable — each stage needs exactly the power the level above adds, no more.</div>
@@ -353,7 +352,7 @@
       <div class="card-head">
         <div class="card-head-top">
           <div>
-            <div class="card-eyebrow">Stage 1 · DFA</div>
+            <div class="card-eyebrow">Stage 1 · DFA · M=(Q,Σ,δ,q0​,F)</div>
             <div class="card-name">Alphabet &amp; frame</div>
           </div>
           <div class="badge wait" id="badge1">waiting</div>
@@ -370,7 +369,7 @@
       <div class="card-head">
         <div class="card-head-top">
           <div>
-            <div class="card-eyebrow">Stage 2 · PDA</div>
+            <div class="card-eyebrow">Stage 2 · PDA · M=(Q,Σ,Γ,δ,q0​,Z0​,F)</div>
             <div class="card-name">Hairpin fold</div>
           </div>
           <div class="badge wait" id="badge2">waiting</div>
@@ -387,7 +386,7 @@
       <div class="card-head">
         <div class="card-head-top">
           <div>
-            <div class="card-eyebrow">Stage 3 · Turing Machine</div>
+            <div class="card-eyebrow">Stage 3 · Turing Machine · M=(Q,Σ,Γ,δ,q0​,B,F)</div>
             <div class="card-name">Reading frame</div>
           </div>
           <div class="badge wait" id="badge3">waiting</div>
@@ -418,7 +417,7 @@
     </div>
   </div>
 
-  <footer>GenoCheck · a sequence must clear Stage 1 before Stage 2, and Stage 2 before Stage 3</footer>
+  <footer>GenoCheck · Abhinav · Rajesh · Shreeya · Shobha </footer>
 
 </main>
 
